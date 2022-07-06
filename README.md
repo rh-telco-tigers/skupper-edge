@@ -1,6 +1,7 @@
 # Skupper-Edge
 
-<img width="1136" alt="Screen Shot 2022-07-06 at 3 41 13 PM" src="https://user-images.githubusercontent.com/7470319/177629957-46721c96-fcdc-49a9-828f-765c9c4f3f79.png">
+<img width="1149" alt="Screen Shot 2022-07-06 at 4 02 56 PM" src="https://user-images.githubusercontent.com/7470319/177633472-e19b47c1-9ea8-44ad-ad5e-a3c0e2fb8e9a.png">
+
 
 ### Follow below steps : 
 

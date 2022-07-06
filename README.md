@@ -50,7 +50,7 @@ skupper-router-local       ClusterIP   172.30.70.227    <none>        5671/TCP  
 	
 	This will populate messages as if edge device is sending some messages to data store (here kafka topic).
 
-### 6 - Inside Kind Cluster, run CamelK (ai-ml/KafkaProcessor.java) process that will read the data from "devices" kafka topic, do some processing as if it's an AI ML code and then send the processed data to "na-east-com" topic used by public cloud cluster.
+### 6 - Inside Kind Cluster, run CamelK [ai-ml/KafkaProcessor.java](ai-ml/KafkaProcessor.java) process that will read the data from "devices" kafka topic, do some processing as if it's an AI ML code and then send the processed data to "na-east-com" topic used by public cloud cluster.
 	 
 	 Install camelk, kamel on your machine and run the KafkaProcessor in Kind cluster created above.
    ```
@@ -61,7 +61,7 @@ skupper-router-local       ClusterIP   172.30.70.227    <none>        5671/TCP  
    - ./kamel run KafkaProcessor.java --config secret:external-registry-secret -n kafka
 ```
 
-### 7 - Inside OCP cluster project on public cloud, run ai-ml/KafkaToDatabase.java that will read the data from "na-east-com" kafka topic, do some processing as if it's an AI ML code and then send the processed data to database in private datacenter.
+### 7 - Inside OCP cluster project on public cloud, run [ai-ml/KafkaToDatabase.java](ai-ml/KafkaToDatabase.java) that will read the data from "na-east-com" kafka topic, do some processing as if it's an AI ML code and then send the processed data to database in private datacenter.
 
 	- Install Camel K operator and create Integration Platform in OCP project.
 ```
